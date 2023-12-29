@@ -18,13 +18,11 @@ Prerequisites:
 # Installation
 1. Clone the repository:
 ```git clone https://github.com/your-username/musical-statues.git```
-2. Install the required dependencies:
-```pip install -r requirements.txt```
-3. Set up Spotify API credentials:
+2. Set up Spotify API credentials:
    - Create a Spotify Developer Account
    - Generate a new application to obtain the client ID and client secret.
-   - Add your credentials to the musicalstatues.py file.
-4. Run the program: ```python musicalstatues.py```
+   - Add your credentials to the ```musicalstatues.py``` file.
+3. Run the program: ```python musicalstatues.py```
 
 # After the game
 After each game session, a recording of your Musical Statues experience will be available in the same folder as the program.
