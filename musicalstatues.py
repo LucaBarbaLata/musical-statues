@@ -6,6 +6,12 @@ import random
 import cv2
 from PIL import Image, ImageTk
 import numpy as np
+import subprocess
+
+packages = ["pillow", "spotipy", "opencv-python", "numpy", "tk"]
+
+for package in packages:
+    subprocess.run(["pip", "install", package])
 
 # Spotify API credentials
 SPOTIPY_CLIENT_ID = '053a582d4a8441e89a0c514ad8efb3ff'
