@@ -15,8 +15,14 @@ SCOPE = 'user-library-read user-read-playback-state user-modify-playback-state'
 
 camera = cv2.VideoCapture(0)  # Use the default camera (you may need to adjust this)
 
-# https://open.spotify.com/playlist/5If2fTGl0RaikCxTgvrRNe?si=ec7a40e170974d62
-PLAYLIST_URI = 'spotify:playlist:5If2fTGl0RaikCxTgvrRNe'
+# Ask the user for the Spotify playlist link
+playlist_link = input("Enter the Spotify playlist link: ")
+
+# Extract the right part after the last colon
+playlist_id = playlist_link.split('/')[-1].split('?')[0]
+
+# Construct the PLAYLIST_URI
+PLAYLIST_URI = f'spotify:playlist:{playlist_id}'
 PLAY_DURATION_MIN = 20  # Minimum duration to play each track (in seconds)
 PLAY_DURATION_MAX = 30  # Maximum duration to play each track (in seconds)
 STOP_WARNING_DURATION = 5  # Duration before stopping to show the yellow light (in seconds)
