@@ -17,7 +17,7 @@ Prerequisites:
 
 # Installation
 1. Clone the repository:
-```git clone https://github.com/your-username/musical-statues.git```
+```git clone https://github.com/LucaBarbaLata/musical-statues.git```
 2. Set up Spotify API credentials:
    - Create a Spotify Developer Account
    - Generate a new application to obtain the client ID and client secret.
